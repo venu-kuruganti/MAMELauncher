@@ -1,0 +1,155 @@
+﻿    <Page
+    x:Class="MAMELauncher.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MAMELauncher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>        
+        <Style TargetType="Button" x:Key="buttonStyle">
+            <Setter Property="Background" Value="#2E8DEF"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Margin" Value="5 5 5 5"/>            
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Grid.RowSpan" Value="1"/>
+            <Setter Property="Grid.ColumnSpan" Value="1"/>
+            <Setter Property=""
+        </Style>
+        <Style TargetType="Grid" x:Key="gridStyle">
+            <Setter Property="Background" Value="#A500AF"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Visible"/>
+            <Setter Property="ScrollViewer.VerticalScrollMode" Value="Enabled"/>
+            <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
+        </Style>
+    </Page.Resources>       
+    
+
+    
+    
+    <Grid Style="{StaticResource gridStyle}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>            
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAladdin" Style="{StaticResource buttonStyle}"  Click="btnAladdin_Click">
+            <Image Source="Assets/Aladdin.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnAOF"  Grid.Column="1" Grid.Row="0" Style="{StaticResource buttonStyle}"  Click="btnAOF_Click"  >
+            <Image Source="Assets/Art_of_Fighting_1.gif" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnAOF2"  Grid.Column="2"  Style="{StaticResource buttonStyle}"        Click="btnAOF2_Click">
+            <Image Source="Assets/Art_Of_Fighting_2.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnBloodBros"  Grid.Column="3"  Style="{StaticResource buttonStyle}"        Click="btnBloodBros_Click">
+            <Image Source="Assets/BloodBrothers.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnBurgerTime"  Grid.Column="4" Style="{StaticResource buttonStyle}"        Click="btnBurgerTime_Click">
+            <Image Source="Assets/Burger Time.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnCadillacsAndDinosaurs"  Grid.Column="0" Grid.Row="1" Style="{StaticResource buttonStyle}"         Click="btnCadillacsAndDinosaurs_Click">
+            <Image Source="Assets/Cadillacs and Dinosaurs.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnCaptainCommando"  Grid.Column="1" Grid.Row="1" Style="{StaticResource buttonStyle}"         Click="btnCaptainCommando_Click">
+            <Image Source="Assets/CaptainCommando.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnCavemanNinja"  Grid.Column="2" Grid.Row="1" Style="{StaticResource buttonStyle}"         Click="btnCavemanNinja_Click">
+            <Image Source="Assets/CaveManNinja.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnDoubleDragon"  Grid.Column="3" Grid.Row="1" Style="{StaticResource buttonStyle}"          Click="btnDoubleDragon_Click">
+            <Image Source="Assets/Double Dragon.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnDoubleDragonNeoGeo"  Grid.Column="4" Grid.Row="1"  Style="{StaticResource buttonStyle}"        Click="btnDoubleDragonNeoGeo_Click">
+            <Image Source="Assets/DoubleDragonNeoGeo.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnFinalFight"  Grid.Column="0" Grid.Row="2"  Style="{StaticResource buttonStyle}"        Click="btnFinalFight_Click">
+            <Image Source="Assets/Final Fight.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnKOF2000"  Grid.Column="1" Grid.Row="2" Style="{StaticResource buttonStyle}"         Click="btnKOF2000_Click">
+            <Image Source="Assets/KOF 2000.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnKOF2001"  Grid.Column="2" Grid.Row="2"  Style="{StaticResource buttonStyle}"        Click="btnKOF2001_Click">
+            <Image Source="Assets/KOF 2001.gif" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnKOF2002"  Grid.Column="3" Grid.Row="2"  Style="{StaticResource buttonStyle}"        Click="btnKOF2002_Click">
+            <Image Source="Assets/KOF 2002.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnKOF2003"  Grid.Column="4" Grid.Row="2" Style="{StaticResource buttonStyle}"         Click="btnKOF2003_Click">
+            <Image Source="Assets/KOF 2003.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnKOF2005"  Grid.Column="0" Grid.Row="3" Style="{StaticResource buttonStyle}"         Click="btnKOF2005_Click">
+            <Image Source="Assets/KOF 2005.png" Stretch="Uniform"/>            
+        </Button>
+        <Button x:Name="btnKOFXAnniv" Content="KOF 10th Anniversary" Grid.Column="1" Grid.Row="3" Style="{StaticResource buttonStyle}"   Click="btnKOFXAnniv_Click">           
+        </Button>
+        <Button x:Name="btnMoonwalker"  Grid.Column="2" Grid.Row="3"  Style="{StaticResource buttonStyle}"        Click="btnMoonwalker_Click_1">
+            <Image Source="Assets/MoonWalker.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnNinjaKids"  Grid.Column="3" Grid.Row="3" Style="{StaticResource buttonStyle}"          Click="btnNinjaKids_Click">
+            <Image Source="Assets/NinjaKids.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnRobocop2"  Grid.Column="4" Grid.Row="3" Style="{StaticResource buttonStyle}"         Click="btnRobocop2_Click">
+            <Image Source="Assets/robocop2.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnSnowBros"  Grid.Column="0" Grid.Row="4" Style="{StaticResource buttonStyle}"         Click="btnSnowBros_Click">
+            <Image Source="Assets/SnowBros.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnStreetFighterAlpha3"  Grid.Column="1" Grid.Row="4" Style="{StaticResource buttonStyle}"         Click="btnStreetFighterAlpha3_Click">
+            <Image Source="Assets/StreetFighterAlpha3.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnSuperStreetFighter2"  Grid.Column="2" Grid.Row="4" Style="{StaticResource buttonStyle}"         Click="btnSuperStreetFighter2_Click">
+            <Image Source="Assets/SuperStreetFighter2Turbo.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnSuperman"  Grid.Column="3" Grid.Row="4" Style="{StaticResource buttonStyle}"          Click="btnSuperman_Click">
+            <Image Source="Assets/Superman.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnWH"  Grid.Column="4" Grid.Row="4" Style="{StaticResource buttonStyle}"          Click="btnWH_Click">
+            <Image Source="Assets/WH.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnWWF"  Grid.Column="0" Grid.Row="5" Style="{StaticResource buttonStyle}"         Click="btnWWF_Click">
+            <Image Source="Assets/WWF.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnAvengers"  Grid.Column="1" Grid.Row="5" Style="{StaticResource buttonStyle}"         Click="btnAvengers_Click">
+            <Image Source="Assets/Avengers.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnSpiderman"  Grid.Column="2" Grid.Row="5" Style="{StaticResource buttonStyle}"         Click="btnSpiderman_Click">
+            <Image Source="Assets/SpiderMan.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnMarvelSuperheroes"  Grid.Column="3" Grid.Row="5" Style="{StaticResource buttonStyle}"         Click="btnMarvelSuperheroes_Click">
+            <Image Source="Assets/MarvelSuperheroes.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnMarvelvsCapcom" Grid.Column="4" Grid.Row="5" Style="{StaticResource buttonStyle}" Click="btnMarvelvsCapcom_Click">
+            <Image Source="Assets/MarvelvsCapcom.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnMarvelSHvsSF"  Grid.Column="0" Grid.Row="6" Style="{StaticResource buttonStyle}"  Click="btnMarvelSHvsSF_Click">
+            <Image Source="Assets/MSHvsSF.jpg" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnXMen"  Grid.Column="1" Grid.Row="6" Style="{StaticResource buttonStyle}"          Click="btnXMen_Click">
+            <Image Source="Assets/XMen.png" Stretch="Uniform"/>
+        </Button>
+        <Button x:Name="btnXMenvsSF"  Grid.Column="2" Grid.Row="6" Style="{StaticResource buttonStyle}"         Click="btnXMenvsSF_Click">
+            <Image Source="Assets/XMenVsSF.jpg" Stretch="Uniform"/>
+        </Button>
+
+    </Grid>
+</Page>
